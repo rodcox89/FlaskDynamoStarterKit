@@ -21,7 +21,7 @@ This tutorial will help you get started with a simply python web application tha
 2. paste your `access_id`, and `secret key in their appropriate locations`
 
 ```
-secrets.py
+*secrets.py*
 
 access_id = <your access ID>
 secret_key = <your access key>
