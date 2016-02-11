@@ -14,7 +14,19 @@ This tutorial will help you get started with a simply python web application tha
         3. you will be taken to the `Your Security Credentials` where you will click on `Access Keys (Access Key ID and Secret Access Key)`
         4. Generate a new key and Store the generated `ID` and `Key` in a safe place.
 
+####Once you have your keys you will need to store them in the project:
 
+1. `cd` into the root directory of the project, and you will find a file called `secrets.py`
+
+2. paste your `access_id`, and `secret key in their appropriate locations`
+
+```secrets.py
+
+access_id = <your access ID>
+secret_key = <your access key>
+
+
+```
 
 pip install virtualenv
 
