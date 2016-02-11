@@ -26,9 +26,34 @@ This tutorial will help you get started with a simply python web application tha
 access_id = <your access ID>
 secret_key = <your access key>
 
-
 ```
 
-pip install virtualenv
+####Time to configure the environment.
+1. Now that your credentials are added into the project, it's time to setup the python environment.
+
+  1. If you're using windows and don't have python installed, go [install(https://www.python.org/downloads/release/python-279/)] Python. If you're on OSX or on windows with Python already installed, move to the next step.
+
+  2. Now that Python is installed, you have access to `pip`, which is the Python package management system we'll be using to install the project dependencies. If you have errors using `pip`, you may have to call `sudo pip` in order to obtain the necessary permissions.
+
+  3. the foundation of all of our dependencies is the Python [virtualenv](http://docs.python-guide.org/en/latest/dev/virtualenvs/) package, which creates a virtual python environment for us to work in. Run the following commands in the project's root directory.
+
+        1. Install virtualenv - `pip install virtualenv`
+        2. Create your virtual environment. `virtualenv venv` (venv will be the name of your environment)
+        3. Specify the version of Python we'll be using `virtualenv -p /usr/bin/python2.7 venv`
+        4. Activate the newly created VM `source venv/bin/activate`. If at anytime you wish to deactivate the environment, typing `deactivate` will do the trick.
+
+  4. Now we will install all of the other packages associated with this project. We can do this all at once using `pip` and the `requirements.txt` file in your root directory. Enter the following command:
+  `sudo pip install -r requirements.txt`.
+
+
+####Your Environment should be good to go, Now let's start the app.
+Navigate to your root directory and run `python main.py`.
+
+your app should now be upp and running. If you open you're browser and go to `http:localhost:5000`, you should see your app's Hello World.
+
+
+
+
+
 
 pip install -r requirements.txt
